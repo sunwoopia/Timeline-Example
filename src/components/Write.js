@@ -26,7 +26,7 @@ export function Write(props){
         <div style={styles.div}>
             <input style={styles.input} type = "text" placeholder = "작성자" value={state.writer} onChange={getValue}/>
             <textarea style={styles.textarea} placeholder = "내용" value={state.writeContent} onChange={getValue}/>
-            <button style={styles.btn} onClick={handleClick}>POST</button>
+            <button style={styles.btn} onClick={handleClick}>작성</button>
         </div>
     </>
 

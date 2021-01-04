@@ -4,8 +4,10 @@ import Fade from "react-reveal";
 
 export function Timeline(props) {
     return <>
-        <Fade>
-            {props.feeds.map((feed) => <Feed name={feed.name} body={feed.body} />)}
-        </Fade>
+        <>
+            <Fade bottom>
+                {props.feeds.map((feed) => <Feed name={feed.name} body={feed.body} />)}
+            </Fade>
+        </>
     </>
 }
